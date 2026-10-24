@@ -12,6 +12,7 @@ project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 * Check a type tag before unwrapping a native object, so a forged prototype chain can no longer crash the process (#2628)
 * Load images from Node.js object URLs (#2525)
+* `actualBoundingBox*` from `measureText()` no longer always include the text origin, so `actualBoundingBoxLeft` can be negative when the ink starts right of the origin (#2620)
 
 3.2.3
 ==================
